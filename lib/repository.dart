@@ -7,7 +7,7 @@ class SuruhRepository extends BaseSuruhRepository {
 
   SuruhRepository(this.baseSuruhRemoteDataSource);
   @override
-  Future<List<Suruh>> getSuruh() async {
+  Future<List<SuruhModel>> getSuruh() async {
     final res = await baseSuruhRemoteDataSource.getSuruh();
     try {
       return res;

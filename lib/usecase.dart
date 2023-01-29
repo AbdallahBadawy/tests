@@ -5,7 +5,7 @@ class GetSuruhUseCase {
   final BaseSuruhRepository baseSuruhRepository;
 
   GetSuruhUseCase(this.baseSuruhRepository);
-  Future<List<Suruh>> excute() async {
+  Future<List<SuruhModel>> excute() async {
     return await baseSuruhRepository.getSuruh();
   }
 }
